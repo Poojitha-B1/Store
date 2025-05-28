@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product store</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Our Products</h1>
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+      
+  <main>
+    <div class="product-container">
+    <div class="product-1">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.fDRAajDxnrBHYEtJVMR9agAAAA?cb=iwc2&rs=1&pid=ImgDetMain" alt="Product Image">
+      <div class="details">
+        <h2>Smart Headphones </h2>
+        <p>Stylish with smart and cool features.</p>
+        <p class="price">$39.99</p>
+        <button onclick="addToCart('Smart Headphones', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product-2"></div>
+      <img src="https://mms.businesswire.com/media/20191028005232/en/752485/5/Apple_AirPods-Pro_New-Design_102819.jpg" alt="Product Image">
+      <div class="details">
+        <h2>Earpods</h2>
+        <p>Comfortable and with Active Noise cancellation.</p>
+        <p class="price">$49.99</p>
+        <button onclick="addToCart('Earpods', 49.99)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="cart-popup" id="cart-popup">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
